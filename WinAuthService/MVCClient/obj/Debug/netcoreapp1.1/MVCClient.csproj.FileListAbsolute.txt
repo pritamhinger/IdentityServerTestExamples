@@ -1,0 +1,9 @@
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\bin\Debug\netcoreapp1.1\MVCClient.deps.json
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\bin\Debug\netcoreapp1.1\MVCClient.runtimeconfig.json
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\bin\Debug\netcoreapp1.1\MVCClient.runtimeconfig.dev.json
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\bin\Debug\netcoreapp1.1\MVCClient.dll
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\bin\Debug\netcoreapp1.1\MVCClient.pdb
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\obj\Debug\netcoreapp1.1\MVCClient.csprojResolveAssemblyReference.cache
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\obj\Debug\netcoreapp1.1\MVCClient.AssemblyInfo.cs
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\obj\Debug\netcoreapp1.1\MVCClient.dll
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\MVCClient\obj\Debug\netcoreapp1.1\MVCClient.pdb
