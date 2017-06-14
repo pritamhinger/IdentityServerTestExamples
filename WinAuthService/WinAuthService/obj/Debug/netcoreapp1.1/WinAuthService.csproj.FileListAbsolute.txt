@@ -6,3 +6,4 @@ C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\WinAuthService\bin\D
 C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\WinAuthService\obj\Debug\netcoreapp1.1\WinAuthService.AssemblyInfo.cs
 C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\WinAuthService\obj\Debug\netcoreapp1.1\WinAuthService.dll
 C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\WinAuthService\obj\Debug\netcoreapp1.1\WinAuthService.pdb
+C:\Office\v12.0\RnD\AuthenticationServicePOC\WinAuthService\WinAuthService\obj\Debug\netcoreapp1.1\WinAuthService.csprojResolveAssemblyReference.cache

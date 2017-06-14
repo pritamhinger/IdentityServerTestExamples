@@ -1,4 +1,5 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityServer4;
+using IdentityServer4.Models;
 using IdentityServer4.Test;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,18 @@ namespace WinAuthService
                         new Secret("secret".Sha256())
                     },
                     AllowedScopes = { "api1" }
+                },
+                new Client {
+                    ClientId = "mvc",
+                    ClientName = "MVC Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RedirectUris = { "http://localhost:5002/signin-oidc" },
+                    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+                    AllowedScopes = new List<string> {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Email
+                    }
                 }
             };
         }
@@ -51,6 +64,16 @@ namespace WinAuthService
                     Username = "testuser2",
                     Password = "$abcd1234"
                 }
+            };
+        }
+
+
+        public static IEnumerable<IdentityResource> GetIdentityResources()
+        {
+            return new List<IdentityResource>{
+                new IdentityResources.OpenId(),
+                new IdentityResources.Email(),
+                new IdentityResources.Profile()
             };
         }
     }

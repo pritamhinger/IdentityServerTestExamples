@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace MVCClient
 {
@@ -46,6 +47,21 @@ namespace MVCClient
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseCookieAuthentication(new CookieAuthenticationOptions {
+                AuthenticationScheme = "Cookies"
+            });
+
+            JwtSecurityTokenHandler.DefaultOutboundClaimTypeMap.Clear();
+
+            app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions {
+                AuthenticationScheme = "oidc",
+                SignInScheme = "Cookies",
+                Authority = "http://localhost:5000",
+                RequireHttpsMetadata = false,
+                ClientId = "mvc",
+                SaveTokens = true
+            });
 
             app.UseStaticFiles();
 

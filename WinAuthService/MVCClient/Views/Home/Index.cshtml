@@ -106,3 +106,11 @@
         </ul>
     </div>
 </div>
+<div class="row">
+    <dl>
+        @foreach(var claim in User.Claims) {
+            <dt>@claim.Type</dt>
+            <dt>@claim.Value</dt>
+        }
+    </dl>
+</div>
